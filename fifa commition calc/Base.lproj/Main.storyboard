@@ -27,6 +27,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="priceValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0eF-BV-vj0"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="판매금액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWv-WQ-ZBR">
                                 <rect key="frame" x="38" y="85" width="59" height="21"/>
@@ -101,8 +104,15 @@
                                     <segment title="원"/>
                                 </segments>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4T8-4t-OWv">
+                                <rect key="frame" x="302" y="304" width="13" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uHv-kK-bkn">
-                                <rect key="frame" x="16" y="231" width="343" height="29"/>
+                                <rect key="frame" x="0.0" y="265" width="374" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="미적용"/>
@@ -111,17 +121,31 @@
                                     <segment title="PC방+탑클"/>
                                     <segment title="직접입력"/>
                                 </segments>
+                                <connections>
+                                    <action selector="discountRateSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="W73-Gq-D8h"/>
+                                </connections>
                             </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4T8-4t-OWv">
-                                <rect key="frame" x="302" y="304" width="13" height="21"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ofo-fY-rOs">
+                                <rect key="frame" x="1" y="231" width="374" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NcR-41-3XF">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="commition" destination="Yqd-1R-iTX" id="9Tj-SC-g3x"/>
+                        <outlet property="discountCommition" destination="MSS-SO-lBf" id="1C9-A6-3kM"/>
+                        <outlet property="discountPercent" destination="YO1-Hp-Rdu" id="K06-3F-63W"/>
+                        <outlet property="discountRateSegment" destination="uHv-kK-bkn" id="650-gD-xfl"/>
+                        <outlet property="price" destination="jI6-VF-rAN" id="kqt-Y8-mgW"/>
+                        <outlet property="receivedAmount" destination="m4M-bW-pgl" id="26I-ME-7Lg"/>
+                        <outlet property="unitSegment" destination="GRg-GZ-nz6" id="x3O-ec-blJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
