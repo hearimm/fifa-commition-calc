@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var discountCommitionTxt: UITextField!
     @IBOutlet weak var receivedAmountTxt: UITextField!
     
+    @IBOutlet weak var calcButton: UIButton!
     @IBOutlet weak var unitSegment: UISegmentedControl!
     @IBOutlet weak var discountRateSegment: UISegmentedControl!
     @IBOutlet var segmetCollection: [UISegmentedControl]!
@@ -42,6 +43,9 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func calcButtonTouchDown(_ sender: Any) {
+        doCalc()
+    }
     @IBAction func txtDoCalc(_ txt:UITextField){
         doCalc()
     }
@@ -50,6 +54,7 @@ class ViewController: UIViewController {
     }
     
     func doCalc() {
+        
         if let priceString = priceTxt.text,
             let price = Double(priceString),
             let unit = getUnitVal(idx: unitSegment.selectedSegmentIndex),
