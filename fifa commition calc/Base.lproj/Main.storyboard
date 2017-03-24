@@ -33,7 +33,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="txtDoCalc:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="GQD-FJ-QZM"/>
                                 </connections>
@@ -51,7 +51,7 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="txtDoCalc:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ifc-f6-1sx"/>
                                 </connections>
