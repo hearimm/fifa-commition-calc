@@ -26,9 +26,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <connections>
-                                    <action selector="priceValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="0eF-BV-vj0"/>
+                                    <action selector="txtDoCalc:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="GQD-FJ-QZM"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="판매금액" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWv-WQ-ZBR">
@@ -38,7 +38,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yqd-1R-iTX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yqd-1R-iTX">
                                 <rect key="frame" x="120" y="175" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -52,7 +52,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSS-SO-lBf">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSS-SO-lBf">
                                 <rect key="frame" x="120" y="357" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -66,7 +66,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4M-bW-pgl">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4M-bW-pgl">
                                 <rect key="frame" x="120" y="406" width="200" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -80,12 +80,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YO1-Hp-Rdu">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YO1-Hp-Rdu">
                                 <rect key="frame" x="197" y="301" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="txtDoCalc:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ifc-f6-1sx"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="수수료" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy1-CX-LkK">
                                 <rect key="frame" x="55" y="304" width="45" height="21"/>
@@ -103,6 +106,9 @@
                                     <segment title="만"/>
                                     <segment title="원"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentDoCalc:" destination="BYZ-38-t0r" eventType="valueChanged" id="9vX-i9-xfw"/>
+                                </connections>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4T8-4t-OWv">
                                 <rect key="frame" x="302" y="304" width="13" height="21"/>
@@ -112,7 +118,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="uHv-kK-bkn">
-                                <rect key="frame" x="0.0" y="265" width="374" height="29"/>
+                                <rect key="frame" x="16" y="265" width="350" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="미적용"/>
@@ -123,28 +129,22 @@
                                 </segments>
                                 <connections>
                                     <action selector="discountRateSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="W73-Gq-D8h"/>
+                                    <action selector="segmentDoCalc:" destination="BYZ-38-t0r" eventType="valueChanged" id="m15-ja-XR1"/>
                                 </connections>
                             </segmentedControl>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Ofo-fY-rOs">
-                                <rect key="frame" x="1" y="231" width="374" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NcR-41-3XF">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
-                                    </stackView>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
-                        <outlet property="commition" destination="Yqd-1R-iTX" id="9Tj-SC-g3x"/>
-                        <outlet property="discountCommition" destination="MSS-SO-lBf" id="1C9-A6-3kM"/>
-                        <outlet property="discountPercent" destination="YO1-Hp-Rdu" id="K06-3F-63W"/>
+                        <outlet property="commitionTxt" destination="Yqd-1R-iTX" id="MG5-Nv-u83"/>
+                        <outlet property="discountCommitionTxt" destination="MSS-SO-lBf" id="Kkx-4M-dTk"/>
                         <outlet property="discountRateSegment" destination="uHv-kK-bkn" id="650-gD-xfl"/>
-                        <outlet property="price" destination="jI6-VF-rAN" id="kqt-Y8-mgW"/>
-                        <outlet property="receivedAmount" destination="m4M-bW-pgl" id="26I-ME-7Lg"/>
+                        <outlet property="discountRateTxt" destination="YO1-Hp-Rdu" id="ggk-84-yjm"/>
+                        <outlet property="priceTxt" destination="jI6-VF-rAN" id="8GF-Cm-9Vm"/>
+                        <outlet property="receivedAmountTxt" destination="m4M-bW-pgl" id="Kci-LV-Eiz"/>
                         <outlet property="unitSegment" destination="GRg-GZ-nz6" id="x3O-ec-blJ"/>
+                        <outletCollection property="segmetCollection" destination="GRg-GZ-nz6" collectionClass="NSMutableArray" id="acz-9A-Znc"/>
+                        <outletCollection property="segmetCollection" destination="uHv-kK-bkn" collectionClass="NSMutableArray" id="4Ww-gx-btC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "518E001D1E848255006D563F"
-               BuildableName = "fifa commition calc.app"
-               BlueprintName = "fifa commition calc"
-               ReferencedContainer = "container:fifa commition calc.xcodeproj">
+               BuildableName = "fifa commission calc.app"
+               BlueprintName = "fifa commission calc"
+               ReferencedContainer = "container:fifa commission calc.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "518E001D1E848255006D563F"
-            BuildableName = "fifa commition calc.app"
-            BlueprintName = "fifa commition calc"
-            ReferencedContainer = "container:fifa commition calc.xcodeproj">
+            BuildableName = "fifa commission calc.app"
+            BlueprintName = "fifa commission calc"
+            ReferencedContainer = "container:fifa commission calc.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "518E001D1E848255006D563F"
-            BuildableName = "fifa commition calc.app"
-            BlueprintName = "fifa commition calc"
-            ReferencedContainer = "container:fifa commition calc.xcodeproj">
+            BuildableName = "fifa commission calc.app"
+            BlueprintName = "fifa commission calc"
+            ReferencedContainer = "container:fifa commission calc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "518E001D1E848255006D563F"
-            BuildableName = "fifa commition calc.app"
-            BlueprintName = "fifa commition calc"
-            ReferencedContainer = "container:fifa commition calc.xcodeproj">
+            BuildableName = "fifa commission calc.app"
+            BlueprintName = "fifa commission calc"
+            ReferencedContainer = "container:fifa commission calc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
