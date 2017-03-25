@@ -19,11 +19,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var calcButton: UIButton!
     @IBOutlet weak var unitSegment: UISegmentedControl!
     @IBOutlet weak var discountRateSegment: UISegmentedControl!
+    
     @IBOutlet var segmetCollection: [UISegmentedControl]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    //키보드 외부 터치시 내리기
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        priceTxt.resignFirstResponder()
+        discountRateTxt.resignFirstResponder()
     }
     
     //할인율 세그먼트 변경시 이벤트

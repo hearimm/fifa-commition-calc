@@ -111,10 +111,18 @@
                                         <items>
                                             <navigationItem title="피온3 수수료 계산기" id="jlY-rj-Jej">
                                                 <barButtonItem key="rightBarButtonItem" style="plain" id="rqf-ie-bcM">
-                                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qgh-Sf-KTe">
+                                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Qgh-Sf-KTe">
                                                         <rect key="frame" x="364" y="7" width="30" height="30"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal" title="계산"/>
+                                                        <state key="normal">
+                                                            <attributedString key="attributedTitle">
+                                                                <fragment content="계산">
+                                                                    <attributes>
+                                                                        <font key="NSFont" metaFont="system" size="15"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                        </state>
                                                         <connections>
                                                             <action selector="calcButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="xy6-eJ-1Ig"/>
                                                         </connections>
