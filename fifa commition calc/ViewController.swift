@@ -68,7 +68,7 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func calcButtonTouchDown(_ sender: Any) {
+    @IBAction func calcButtonTouchDown(_ sender: UIButton) {
         doCalc()
     }
     @IBAction func txtDoCalc(_ txt:UITextField){

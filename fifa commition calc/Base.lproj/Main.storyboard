@@ -107,7 +107,18 @@
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgF-Rc-EOJ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                         <items>
-                                            <navigationItem title="피온3 수수료 계산기" id="ESf-32-2iy"/>
+                                            <navigationItem title="피온3 수수료 계산기" id="ESf-32-2iy">
+                                                <barButtonItem key="rightBarButtonItem" id="AQy-Vy-nFS">
+                                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QbC-BY-iaD">
+                                                        <rect key="frame" x="302" y="7" width="92" height="30"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <state key="normal" title="계산"/>
+                                                        <connections>
+                                                            <action selector="calcButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1qt-9F-dgi"/>
+                                                        </connections>
+                                                    </button>
+                                                </barButtonItem>
+                                            </navigationItem>
                                         </items>
                                     </navigationBar>
                                 </subviews>
