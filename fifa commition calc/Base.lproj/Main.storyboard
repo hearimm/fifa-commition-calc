@@ -162,6 +162,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5e-uN-i5U" customClass="GADBannerView">
+                                <rect key="frame" x="47" y="686" width="320" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="ebJ-J9-0Bl"/>
+                                    <constraint firstAttribute="height" constant="50" id="sq7-WP-XSF"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -200,8 +208,10 @@
                             <constraint firstItem="4T8-4t-OWv" firstAttribute="trailing" secondItem="Yqd-1R-iTX" secondAttribute="trailing" id="d9z-GX-GUd"/>
                             <constraint firstItem="U6E-li-vOJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="esf-16-TA7"/>
                             <constraint firstItem="GRg-GZ-nz6" firstAttribute="height" secondItem="jI6-VF-rAN" secondAttribute="height" constant="-2" id="kaD-SP-Qfz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J5e-uN-i5U" secondAttribute="bottom" id="lLz-ub-VMY"/>
                             <constraint firstItem="MSS-SO-lBf" firstAttribute="top" secondItem="YO1-Hp-Rdu" secondAttribute="bottom" constant="20" id="lLz-y0-jX2"/>
                             <constraint firstItem="MSS-SO-lBf" firstAttribute="centerY" secondItem="U6E-li-vOJ" secondAttribute="centerY" id="nld-I5-404"/>
+                            <constraint firstItem="J5e-uN-i5U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pQp-Re-kJ5"/>
                             <constraint firstItem="Yqd-1R-iTX" firstAttribute="centerY" secondItem="dZd-IG-sum" secondAttribute="centerY" id="pWd-a1-kEd"/>
                             <constraint firstItem="4UV-jA-qR0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="qKf-Fk-fXc"/>
                             <constraint firstItem="4UV-jA-qR0" firstAttribute="width" secondItem="cWv-WQ-ZBR" secondAttribute="width" id="qNT-tb-SeE"/>
@@ -219,6 +229,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerView" destination="J5e-uN-i5U" id="Qu7-LE-VuL"/>
+                        <outlet property="calcButton" destination="QbC-BY-iaD" id="eyt-IJ-EzZ"/>
                         <outlet property="commitionTxt" destination="Yqd-1R-iTX" id="MG5-Nv-u83"/>
                         <outlet property="discountCommitionTxt" destination="MSS-SO-lBf" id="Kkx-4M-dTk"/>
                         <outlet property="discountRateSegment" destination="uHv-kK-bkn" id="650-gD-xfl"/>

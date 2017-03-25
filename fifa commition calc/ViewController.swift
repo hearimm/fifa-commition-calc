@@ -7,9 +7,12 @@
 //
 
 import UIKit
+import Firebase
+import GoogleMobileAds
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var bannerView: GADBannerView!
     @IBOutlet weak var priceTxt: UITextField!
     @IBOutlet weak var commitionTxt: UITextField!
     @IBOutlet weak var discountRateTxt: UITextField!
@@ -25,6 +28,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
+        bannerView.adUnitID = "ca-app-pub-8793713887337890/4356369960"
+        bannerView.rootViewController = self
+        bannerView.load(GADRequest())
     }
     
     //키보드 외부 터치시 내리기
