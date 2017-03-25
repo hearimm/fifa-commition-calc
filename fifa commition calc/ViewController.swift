@@ -160,6 +160,7 @@ class ViewController: UIViewController {
         doCalcCnt = doCalcCnt+1
         if doCalcCnt % 20 == 0{
             presentInterstitial()
+            createAndLoadInterstitial()
         }
         
     }
