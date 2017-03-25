@@ -25,7 +25,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var discountRateSegment: UISegmentedControl!
     
     @IBOutlet var segmetCollection: [UISegmentedControl]!
-    
+    var interstitial: GADInterstitial!
+    var doCalcCnt:Int = 0;
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -34,6 +36,26 @@ class ViewController: UIViewController {
         bannerView.adUnitID = "ca-app-pub-8793713887337890/4356369960"
         bannerView.rootViewController = self
         bannerView.load(GADRequest())
+        
+        createAndLoadInterstitial()
+        presentInterstitial()
+    }
+    
+    fileprivate func createAndLoadInterstitial() {
+        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8793713887337890/8646968768")
+        let request = GADRequest()
+        // Request test ads on devices you specify. Your test device ID is printed to the console when
+        // an ad request is made.
+        // request.testDevices = [ kGADSimulatorID, "2077ef9a63d2b398840261c8221a0c9b" ]
+        interstitial.load(request)
+    }
+    func presentInterstitial() {
+        if interstitial.isReady {
+            interstitial.present(fromRootViewController: self)
+        } else {
+            print("Ad wasn't ready")
+        }
+        // Give user the option to start the next game.
     }
     
     //키보드 외부 터치시 내리기
@@ -135,7 +157,10 @@ class ViewController: UIViewController {
         commitionTxt.text = Int64(defaultCommition).description
         discountCommitionTxt.text = Int64(discountCommition).description
         receivedAmountTxt.text = Int64(receviedAmount).description
-        
+        doCalcCnt = doCalcCnt+1
+        if doCalcCnt % 20 == 0{
+            presentInterstitial()
+        }
         
     }
     
