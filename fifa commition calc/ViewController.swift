@@ -33,6 +33,24 @@ class ViewController: UIViewController {
         discountRateTxt.resignFirstResponder()
     }
     
+    @IBAction func priceTxtEditingChanged(_ sender: UITextField) {
+        checkMaxLength(textField: sender, maxLength: 11)
+    }
+    @IBAction func discountRateTxtEditingChanged(_ sender: UITextField) {
+        if let rateStr = sender.text
+           ,let rateDouble = Double(rateStr)
+            ,rateDouble > 100{
+            sender.deleteBackward()
+        }
+        checkMaxLength(textField: sender, maxLength: 4)
+    }
+    
+    func checkMaxLength(textField: UITextField!, maxLength: Int) {
+        if (textField.text!.characters.count > maxLength) {
+            textField.deleteBackward()
+        }
+    }
+    
     //할인율 세그먼트 변경시 이벤트
     @IBAction func discountRateSegmentChanged(_ segment: UISegmentedControl) {
         
@@ -105,9 +123,9 @@ class ViewController: UIViewController {
         let discountCommition = defaultCommition * (discountRate / 100 )
         let receviedAmount = priceVal - (defaultCommition - discountCommition)
         
-        commitionTxt.text = Int(defaultCommition).description
-        discountCommitionTxt.text = Int(discountCommition).description
-        receivedAmountTxt.text = Int(receviedAmount).description
+        commitionTxt.text = Int64(defaultCommition).description
+        discountCommitionTxt.text = Int64(discountCommition).description
+        receivedAmountTxt.text = Int64(receviedAmount).description
         
         
     }

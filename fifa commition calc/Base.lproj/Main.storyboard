@@ -22,11 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="YfP-hA-jr5">
-                                <rect key="frame" x="336" y="20" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </stackView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jI6-VF-rAN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="판매금액을 입력하세요" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jI6-VF-rAN">
                                 <rect key="frame" x="116" y="84" width="278" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="j0o-O2-YJA"/>
@@ -35,6 +31,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
+                                    <action selector="priceTxtEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="wY2-Dz-Wvm"/>
                                     <action selector="txtDoCalc:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="GQD-FJ-QZM"/>
                                 </connections>
                             </textField>
@@ -45,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YO1-Hp-Rdu">
-                                <rect key="frame" x="273" y="256" width="100" height="30"/>
+                                <rect key="frame" x="273" y="268" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="RDr-rh-R41"/>
                                 </constraints>
@@ -53,17 +50,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
+                                    <action selector="discountRateTxtEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="iGS-7q-Ryt"/>
                                     <action selector="txtDoCalc:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ifc-f6-1sx"/>
                                 </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수수료" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy1-CX-LkK">
-                                <rect key="frame" x="30" y="260.66666666666669" width="78" height="21"/>
+                                <rect key="frame" x="30" y="272.66666666666669" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4T8-4t-OWv">
-                                <rect key="frame" x="381" y="261" width="13" height="20.333333333333314"/>
+                                <rect key="frame" x="381" y="273" width="13" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,35 +104,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="phZ-qW-2MW">
                                 <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <subviews>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q6I-NZ-qNn">
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pgF-Rc-EOJ">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                         <items>
-                                            <navigationItem title="피온3 수수료 계산기" id="jlY-rj-Jej">
-                                                <barButtonItem key="rightBarButtonItem" style="plain" id="rqf-ie-bcM">
-                                                    <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="Qgh-Sf-KTe">
-                                                        <rect key="frame" x="364" y="7" width="30" height="30"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle">
-                                                                <fragment content="계산">
-                                                                    <attributes>
-                                                                        <font key="NSFont" metaFont="system" size="15"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                        </state>
-                                                        <connections>
-                                                            <action selector="calcButtonTouchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="xy6-eJ-1Ig"/>
-                                                        </connections>
-                                                    </button>
-                                                </barButtonItem>
-                                            </navigationItem>
+                                            <navigationItem title="피온3 수수료 계산기" id="ESf-32-2iy"/>
                                         </items>
                                     </navigationBar>
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSS-SO-lBf">
-                                <rect key="frame" x="116" y="306" width="278" height="30"/>
+                                <rect key="frame" x="116" y="318" width="278" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JgA-Cy-68p"/>
                                 </constraints>
@@ -143,33 +122,33 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="할인 금액" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6E-li-vOJ">
-                                <rect key="frame" x="30" y="310.66666666666669" width="78" height="21"/>
+                                <rect key="frame" x="30" y="322.66666666666669" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4M-bW-pgl">
-                                <rect key="frame" x="116" y="356" width="278" height="30"/>
+                                <rect key="frame" x="116" y="368" width="278" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="13L-aM-TTV"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="받을 금액" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UV-jA-qR0">
-                                <rect key="frame" x="30" y="360.66666666666669" width="78" height="21"/>
+                                <rect key="frame" x="30" y="372.66666666666669" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yqd-1R-iTX">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yqd-1R-iTX">
                                 <rect key="frame" x="116" y="170" width="278" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="eei-qa-Bfd"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -182,7 +161,7 @@
                             <constraint firstItem="YO1-Hp-Rdu" firstAttribute="centerY" secondItem="wy1-CX-LkK" secondAttribute="centerY" id="6OA-4x-3zw"/>
                             <constraint firstItem="Yqd-1R-iTX" firstAttribute="top" secondItem="GRg-GZ-nz6" secondAttribute="bottom" constant="20" id="6Ug-7w-lK1"/>
                             <constraint firstItem="uHv-kK-bkn" firstAttribute="top" secondItem="Yqd-1R-iTX" secondAttribute="bottom" constant="20" id="6i1-z5-zud"/>
-                            <constraint firstItem="YO1-Hp-Rdu" firstAttribute="top" secondItem="uHv-kK-bkn" secondAttribute="bottom" constant="8" id="7P9-74-mSE"/>
+                            <constraint firstItem="YO1-Hp-Rdu" firstAttribute="top" secondItem="uHv-kK-bkn" secondAttribute="bottom" constant="20" id="7P9-74-mSE"/>
                             <constraint firstItem="jI6-VF-rAN" firstAttribute="top" secondItem="phZ-qW-2MW" secondAttribute="bottom" constant="20" id="8hI-zo-qSX"/>
                             <constraint firstItem="uHv-kK-bkn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="8oE-DI-99W"/>
                             <constraint firstItem="4T8-4t-OWv" firstAttribute="leading" secondItem="YO1-Hp-Rdu" secondAttribute="trailing" constant="8" id="9JY-wT-PAx"/>
@@ -229,7 +208,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="calcButton" destination="Qgh-Sf-KTe" id="eCj-FJ-IB9"/>
                         <outlet property="commitionTxt" destination="Yqd-1R-iTX" id="MG5-Nv-u83"/>
                         <outlet property="discountCommitionTxt" destination="MSS-SO-lBf" id="Kkx-4M-dTk"/>
                         <outlet property="discountRateSegment" destination="uHv-kK-bkn" id="650-gD-xfl"/>
