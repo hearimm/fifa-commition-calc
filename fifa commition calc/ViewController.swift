@@ -35,10 +35,9 @@ class ViewController: UIViewController {
         print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
         bannerView.adUnitID = "ca-app-pub-8793713887337890/4356369960"
         bannerView.rootViewController = self
-        bannerView.load(GADRequest())
+        //bannerView.load(GADRequest())
         
-        createAndLoadInterstitial()
-        presentInterstitial()
+        //createAndLoadInterstitial()
     }
     
     fileprivate func createAndLoadInterstitial() {
@@ -109,8 +108,8 @@ class ViewController: UIViewController {
         doCalc()
     }
     
+    //호출용 계산 로직
     func doCalc() {
-        
         if let priceString = priceTxt.text,
             let price = Double(priceString),
             let unit = getUnitVal(idx: unitSegment.selectedSegmentIndex),
@@ -118,17 +117,13 @@ class ViewController: UIViewController {
             let discountRate = Double(discountRateString){
                 calc(price: price,unit: unit,discountRate: discountRate)
         }
-        
-        
     }
     
     func getUnitVal(idx : Int) -> Double? {
-        
         switch idx {
         case 0:
             return 100000000
         case 1:
-            
             return 1000000
         case 2:
             return 10000
@@ -162,7 +157,6 @@ class ViewController: UIViewController {
             presentInterstitial()
             createAndLoadInterstitial()
         }
-        
     }
     
     
