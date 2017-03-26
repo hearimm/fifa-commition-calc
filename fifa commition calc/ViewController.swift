@@ -23,30 +23,39 @@ class ViewController: UIViewController {
     @IBOutlet weak var calcButton: UIButton!
     @IBOutlet weak var unitSegment: UISegmentedControl!
     @IBOutlet weak var discountRateSegment: UISegmentedControl!
+    @IBOutlet weak var couponSegment: UISegmentedControl!
     
     @IBOutlet var segmetCollection: [UISegmentedControl]!
     var interstitial: GADInterstitial!
     var doCalcCnt:Int = 0;
+    let DEV_STATE = "DEV"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        if DEV_STATE == "DEV"{
+            return
+        }else{
+            print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
+            bannerView.adUnitID = "ca-app-pub-8793713887337890/4356369960"
+            bannerView.rootViewController = self
+            bannerView.load(GADRequest())
         
-        print("Google Mobile Ads SDK version: " + GADRequest.sdkVersion())
-        bannerView.adUnitID = "ca-app-pub-8793713887337890/4356369960"
-        bannerView.rootViewController = self
-        //bannerView.load(GADRequest())
-        
-        //createAndLoadInterstitial()
+            createAndLoadInterstitial()
+        }
     }
     
     fileprivate func createAndLoadInterstitial() {
-        interstitial = GADInterstitial(adUnitID: "ca-app-pub-8793713887337890/8646968768")
-        let request = GADRequest()
-        // Request test ads on devices you specify. Your test device ID is printed to the console when
-        // an ad request is made.
-        // request.testDevices = [ kGADSimulatorID, "2077ef9a63d2b398840261c8221a0c9b" ]
-        interstitial.load(request)
+        if DEV_STATE == "DEV"{
+            return
+        }else{
+            interstitial = GADInterstitial(adUnitID: "ca-app-pub-8793713887337890/8646968768")
+            let request = GADRequest()
+            // Request test ads on devices you specify. Your test device ID is printed to the console when
+            // an ad request is made.
+            // request.testDevices = [ kGADSimulatorID, "2077ef9a63d2b398840261c8221a0c9b" ]
+            interstitial.load(request)
+        }
     }
     func presentInterstitial() {
         if interstitial.isReady {
@@ -83,17 +92,31 @@ class ViewController: UIViewController {
     
     //할인율 세그먼트 변경시 이벤트
     @IBAction func discountRateSegmentChanged(_ segment: UISegmentedControl) {
-        
-        let discountRateArr = [0,30,40,50,0] //할인율 상수
+        discountRateSegmentChanged()//할인율 세그먼트, 쿠폰세그먼트 변경시, 할인율 값 입력 함수
         let idx = segment.selectedSegmentIndex
-        let val = discountRateArr[idx].description //tostring
-        discountRateTxt.text = val //할인율 텍스트필드 입력
         
         if idx == 4 { //할인율 직접입력 시, enable
             discountRateTxt.isEnabled = true
+            discountRateTxt.text = String(0)
         }else{
             discountRateTxt.isEnabled = false
         }
+    }
+    @IBAction func couponRateSegmentChanged(_ sender: UISegmentedControl) {
+        discountRateSegmentChanged()//할인율 세그먼트, 쿠폰세그먼트 변경시, 할인율 값 입력 함수
+    }
+    
+    //할인율 세그먼트, 쿠폰세그먼트 변경시, 할인율 값 입력 함수
+    func discountRateSegmentChanged(){
+        let discountRateArr = [0,30,40,50,0] //할인율 상수
+        let couponArr = [0,10,20,30,50] //쿠폰 상수
+        //할인율 세그먼트
+        let discountRateIdx = discountRateSegment.selectedSegmentIndex
+        let discountRateVal = discountRateArr[discountRateIdx] //tostring
+        //쿠폰 세그먼트
+        let couponIdx = couponSegment.selectedSegmentIndex
+        let couponVal = couponArr[couponIdx] //tostring
+        discountRateTxt.text = String(discountRateVal + couponVal)//할인율 텍스트필드 입력
     }
     
     
