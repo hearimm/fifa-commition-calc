@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,7 +19,7 @@
 
 /* Begin PBXFileReference section */
 		4E123DC740E2A882F3B54F36 /* Pods-fifa commission calc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fifa commission calc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fifa commission calc/Pods-fifa commission calc.debug.xcconfig"; sourceTree = "<group>"; };
-		518E001E1E848255006D563F /* fifa commission calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fifa commission calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		518E001E1E848255006D563F /* fifaOnline3-commission-calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fifaOnline3-commission-calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E00211E848255006D563F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		518E00231E848255006D563F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		518E00261E848255006D563F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		518E001F1E848255006D563F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				518E001E1E848255006D563F /* fifa commission calc.app */,
+				518E001E1E848255006D563F /* fifaOnline3-commission-calc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		518E001D1E848255006D563F /* fifa commission calc */ = {
+		518E001D1E848255006D563F /* fifaOnline3-commission-calc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 518E00331E848255006D563F /* Build configuration list for PBXNativeTarget "fifa commission calc" */;
+			buildConfigurationList = 518E00331E848255006D563F /* Build configuration list for PBXNativeTarget "fifaOnline3-commission-calc" */;
 			buildPhases = (
 				092E1FBC12BC8A47C2C85BFD /* [CP] Check Pods Manifest.lock */,
 				518E001A1E848255006D563F /* Sources */,
@@ -112,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = "fifa commission calc";
+			name = "fifaOnline3-commission-calc";
 			productName = "fifa commition calc";
-			productReference = 518E001E1E848255006D563F /* fifa commission calc.app */;
+			productReference = 518E001E1E848255006D563F /* fifaOnline3-commission-calc.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,19 +123,19 @@
 		518E00161E848255006D563F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = 553JH6R57K;
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Hearimm;
 				TargetAttributes = {
 					518E001D1E848255006D563F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 553JH6R57K;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 518E00191E848255006D563F /* Build configuration list for PBXProject "fifa commission calc" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = 518E00191E848255006D563F /* Build configuration list for PBXProject "fifaOnline3.commission.calc" */;
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -147,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				518E001D1E848255006D563F /* fifa commission calc */,
+				518E001D1E848255006D563F /* fifaOnline3-commission-calc */,
 			);
 		};
 /* End PBXProject section */
@@ -349,7 +349,7 @@
 				INFOPLIST_FILE = "fifa commition calc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Hearimm.fifaOnline-commission-calc";
+				PRODUCT_BUNDLE_IDENTIFIER = Hearimm.fifaOnline3.commission.calc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -364,7 +364,7 @@
 				INFOPLIST_FILE = "fifa commition calc/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Hearimm.fifaOnline-commission-calc";
+				PRODUCT_BUNDLE_IDENTIFIER = Hearimm.fifaOnline3.commission.calc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -373,7 +373,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		518E00191E848255006D563F /* Build configuration list for PBXProject "fifa commission calc" */ = {
+		518E00191E848255006D563F /* Build configuration list for PBXProject "fifaOnline3.commission.calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				518E00311E848255006D563F /* Debug */,
@@ -382,7 +382,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		518E00331E848255006D563F /* Build configuration list for PBXNativeTarget "fifa commission calc" */ = {
+		518E00331E848255006D563F /* Build configuration list for PBXNativeTarget "fifaOnline3-commission-calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				518E00341E848255006D563F /* Debug */,
