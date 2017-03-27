@@ -175,14 +175,21 @@ class ViewController: UIViewController {
         let discountCommition = defaultCommition * (discountRate / 100 )
         let receviedAmount = priceVal - (defaultCommition - discountCommition)
         
-        commitionTxt.text = Int64(defaultCommition).description
-        discountCommitionTxt.text = Int64(discountCommition).description
-        receivedAmountTxt.text = Int64(receviedAmount).description
+        commitionTxt.text = decimalFormatter(largeNumber: defaultCommition)
+        discountCommitionTxt.text = decimalFormatter(largeNumber: discountCommition)
+        receivedAmountTxt.text = decimalFormatter(largeNumber: receviedAmount)
         doCalcCnt = doCalcCnt+1
         if doCalcCnt % 20 == 0{
             presentInterstitial()
             createAndLoadInterstitial()
         }
+    }
+    
+    //콤마 표시 변경하기
+    func decimalFormatter(largeNumber: Double) -> String{
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = NumberFormatter.Style.decimal
+        return numberFormatter.string(from: NSNumber(value: largeNumber))!
     }
     
     
