@@ -58,6 +58,9 @@ class ViewController: UIViewController {
         }
     }
     func presentInterstitial() {
+        if DEV_STATE == "DEV"{
+            return
+        }
         if interstitial.isReady {
             interstitial.present(fromRootViewController: self)
         } else {
