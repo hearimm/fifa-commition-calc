@@ -52,6 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data stack
 
+    @available(iOS 10.0, *)
     lazy var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
@@ -82,7 +83,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data Saving support
 
     func saveContext () {
-        let context = persistentContainer.viewContext
+        var context: NSManagedObjectContext
+        
+        if #available(iOS 10.0, *) {
+            context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        } else {
+            // iOS 9.0 and below - however you were previously handling it
+            guard let modelURL = Bundle.main.url(forResource: "Model", withExtension:"momd") else {
+                fatalError("Error loading model from bundle")
+            }
+            guard let mom = NSManagedObjectModel(contentsOf: modelURL) else {
+                fatalError("Error initializing mom from: \(modelURL)")
+            }
+            let psc = NSPersistentStoreCoordinator(managedObjectModel: mom)
+            context = NSManagedObjectContext(concurrencyType: .mainQueueConcurrencyType)
+            let urls = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+            let docURL = urls[urls.endIndex-1]
+            let storeURL = docURL.appendingPathComponent("Model.sqlite")
+            do {
+                try psc.addPersistentStore(ofType: NSSQLiteStoreType, configurationName: nil, at: storeURL, options: nil)
+            } catch {
+                fatalError("Error migrating store: \(error)")
+            }
+        }
         if context.hasChanges {
             do {
                 try context.save()
