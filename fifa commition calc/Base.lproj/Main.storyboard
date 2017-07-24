@@ -13,7 +13,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fifa_commission_calc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="fifaOnline3_commission_calc" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -41,27 +41,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YO1-Hp-Rdu">
-                                <rect key="frame" x="273" y="268" width="100" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="RDr-rh-R41"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                <connections>
-                                    <action selector="discountRateTxtEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="iGS-7q-Ryt"/>
-                                    <action selector="txtDoCalc:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ifc-f6-1sx"/>
-                                </connections>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수수료" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wy1-CX-LkK">
-                                <rect key="frame" x="30" y="272.66666666666669" width="78" height="21"/>
+                                <rect key="frame" x="30" y="321" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4T8-4t-OWv">
-                                <rect key="frame" x="381" y="273" width="13" height="20.333333333333314"/>
+                                <rect key="frame" x="381" y="321" width="13" height="20.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -78,6 +65,20 @@
                                 <connections>
                                     <action selector="discountRateSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="W73-Gq-D8h"/>
                                     <action selector="segmentDoCalc:" destination="BYZ-38-t0r" eventType="valueChanged" id="m15-ja-XR1"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Mnp-8g-gWD">
+                                <rect key="frame" x="30" y="268" width="364" height="29"/>
+                                <segments>
+                                    <segment title="쿠폰 미적용"/>
+                                    <segment title="10%"/>
+                                    <segment title="20%"/>
+                                    <segment title="30%"/>
+                                    <segment title="50%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="couponRateSegmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fTU-y0-PdA"/>
+                                    <action selector="segmentDoCalc:" destination="BYZ-38-t0r" eventType="valueChanged" id="JMf-eR-PV1"/>
                                 </connections>
                             </segmentedControl>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GRg-GZ-nz6">
@@ -124,7 +125,7 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MSS-SO-lBf">
-                                <rect key="frame" x="116" y="318" width="278" height="30"/>
+                                <rect key="frame" x="116" y="379" width="278" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="JgA-Cy-68p"/>
                                 </constraints>
@@ -133,13 +134,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="할인 금액" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6E-li-vOJ">
-                                <rect key="frame" x="30" y="322.66666666666669" width="78" height="21"/>
+                                <rect key="frame" x="30" y="383.66666666666669" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m4M-bW-pgl">
-                                <rect key="frame" x="116" y="368" width="278" height="30"/>
+                                <rect key="frame" x="116" y="429" width="278" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="13L-aM-TTV"/>
                                 </constraints>
@@ -148,7 +149,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="받을 금액" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4UV-jA-qR0">
-                                <rect key="frame" x="30" y="372.66666666666669" width="78" height="21"/>
+                                <rect key="frame" x="30" y="433" width="78" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -170,28 +171,43 @@
                                     <constraint firstAttribute="height" constant="50" id="sq7-WP-XSF"/>
                                 </constraints>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YO1-Hp-Rdu">
+                                <rect key="frame" x="273" y="316" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="RDr-rh-R41"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                <connections>
+                                    <action selector="discountRateTxtEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="iGS-7q-Ryt"/>
+                                    <action selector="txtDoCalc:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ifc-f6-1sx"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="phZ-qW-2MW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0V2-Xa-Add"/>
                             <constraint firstItem="uHv-kK-bkn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="43I-J5-bTd"/>
+                            <constraint firstItem="4T8-4t-OWv" firstAttribute="centerY" secondItem="wy1-CX-LkK" secondAttribute="centerY" id="4l1-7x-cbq"/>
+                            <constraint firstItem="Mnp-8g-gWD" firstAttribute="width" secondItem="uHv-kK-bkn" secondAttribute="width" id="4x7-cv-wMf"/>
                             <constraint firstItem="phZ-qW-2MW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="5AC-NA-4bd"/>
                             <constraint firstItem="jI6-VF-rAN" firstAttribute="leading" secondItem="cWv-WQ-ZBR" secondAttribute="trailing" constant="8" id="5oC-x2-lyQ"/>
-                            <constraint firstItem="YO1-Hp-Rdu" firstAttribute="centerY" secondItem="wy1-CX-LkK" secondAttribute="centerY" id="6OA-4x-3zw"/>
                             <constraint firstItem="Yqd-1R-iTX" firstAttribute="top" secondItem="GRg-GZ-nz6" secondAttribute="bottom" constant="20" id="6Ug-7w-lK1"/>
                             <constraint firstItem="uHv-kK-bkn" firstAttribute="top" secondItem="Yqd-1R-iTX" secondAttribute="bottom" constant="20" id="6i1-z5-zud"/>
-                            <constraint firstItem="YO1-Hp-Rdu" firstAttribute="top" secondItem="uHv-kK-bkn" secondAttribute="bottom" constant="20" id="7P9-74-mSE"/>
                             <constraint firstItem="jI6-VF-rAN" firstAttribute="top" secondItem="phZ-qW-2MW" secondAttribute="bottom" constant="20" id="8hI-zo-qSX"/>
+                            <constraint firstItem="Mnp-8g-gWD" firstAttribute="height" secondItem="uHv-kK-bkn" secondAttribute="height" id="8it-El-nVc"/>
                             <constraint firstItem="uHv-kK-bkn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="8oE-DI-99W"/>
-                            <constraint firstItem="4T8-4t-OWv" firstAttribute="leading" secondItem="YO1-Hp-Rdu" secondAttribute="trailing" constant="8" id="9JY-wT-PAx"/>
                             <constraint firstItem="MSS-SO-lBf" firstAttribute="trailing" secondItem="jI6-VF-rAN" secondAttribute="trailing" id="9we-ku-SuB"/>
                             <constraint firstItem="GRg-GZ-nz6" firstAttribute="top" secondItem="jI6-VF-rAN" secondAttribute="bottom" constant="8" id="BbI-9B-CKi"/>
                             <constraint firstItem="m4M-bW-pgl" firstAttribute="top" secondItem="MSS-SO-lBf" secondAttribute="bottom" constant="20" id="CMc-F7-qxX"/>
                             <constraint firstItem="U6E-li-vOJ" firstAttribute="height" secondItem="cWv-WQ-ZBR" secondAttribute="height" id="DHf-hs-2RP"/>
+                            <constraint firstItem="Mnp-8g-gWD" firstAttribute="top" secondItem="uHv-kK-bkn" secondAttribute="bottom" constant="20" id="E5H-lv-AYk"/>
                             <constraint firstItem="U6E-li-vOJ" firstAttribute="width" secondItem="cWv-WQ-ZBR" secondAttribute="width" id="Gm1-Wz-d9b"/>
                             <constraint firstItem="4UV-jA-qR0" firstAttribute="height" secondItem="cWv-WQ-ZBR" secondAttribute="height" id="Gyj-JI-w0Y"/>
                             <constraint firstItem="jI6-VF-rAN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="H9j-p4-eRz"/>
                             <constraint firstItem="MSS-SO-lBf" firstAttribute="width" secondItem="jI6-VF-rAN" secondAttribute="width" id="JG1-Ar-vTH"/>
+                            <constraint firstItem="Mnp-8g-gWD" firstAttribute="leading" secondItem="uHv-kK-bkn" secondAttribute="leading" id="KeU-dx-eHl"/>
                             <constraint firstAttribute="trailing" secondItem="phZ-qW-2MW" secondAttribute="trailing" id="KnK-ia-Luu"/>
                             <constraint firstItem="4T8-4t-OWv" firstAttribute="leading" secondItem="YO1-Hp-Rdu" secondAttribute="trailing" constant="8" id="KoG-3L-hhn"/>
                             <constraint firstItem="Yqd-1R-iTX" firstAttribute="width" secondItem="jI6-VF-rAN" secondAttribute="width" id="LrO-FR-ThZ"/>
@@ -205,18 +221,19 @@
                             <constraint firstItem="jI6-VF-rAN" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ZBe-Zv-AgZ"/>
                             <constraint firstItem="m4M-bW-pgl" firstAttribute="trailing" secondItem="jI6-VF-rAN" secondAttribute="trailing" id="ZOA-r9-yh6"/>
                             <constraint firstItem="wy1-CX-LkK" firstAttribute="height" secondItem="cWv-WQ-ZBR" secondAttribute="height" id="ZYr-iq-iBr"/>
+                            <constraint firstItem="YO1-Hp-Rdu" firstAttribute="top" secondItem="Mnp-8g-gWD" secondAttribute="bottom" constant="20" id="cb1-ct-4VV"/>
                             <constraint firstItem="4T8-4t-OWv" firstAttribute="trailing" secondItem="Yqd-1R-iTX" secondAttribute="trailing" id="d9z-GX-GUd"/>
                             <constraint firstItem="U6E-li-vOJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="esf-16-TA7"/>
+                            <constraint firstItem="YO1-Hp-Rdu" firstAttribute="centerY" secondItem="wy1-CX-LkK" secondAttribute="centerY" id="hCC-rd-7gb"/>
                             <constraint firstItem="GRg-GZ-nz6" firstAttribute="height" secondItem="jI6-VF-rAN" secondAttribute="height" constant="-2" id="kaD-SP-Qfz"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J5e-uN-i5U" secondAttribute="bottom" id="lLz-ub-VMY"/>
-                            <constraint firstItem="MSS-SO-lBf" firstAttribute="top" secondItem="YO1-Hp-Rdu" secondAttribute="bottom" constant="20" id="lLz-y0-jX2"/>
+                            <constraint firstItem="MSS-SO-lBf" firstAttribute="top" secondItem="YO1-Hp-Rdu" secondAttribute="bottom" constant="33" id="lLz-y0-jX2"/>
                             <constraint firstItem="MSS-SO-lBf" firstAttribute="centerY" secondItem="U6E-li-vOJ" secondAttribute="centerY" id="nld-I5-404"/>
                             <constraint firstItem="J5e-uN-i5U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pQp-Re-kJ5"/>
                             <constraint firstItem="Yqd-1R-iTX" firstAttribute="centerY" secondItem="dZd-IG-sum" secondAttribute="centerY" id="pWd-a1-kEd"/>
                             <constraint firstItem="4UV-jA-qR0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="qKf-Fk-fXc"/>
                             <constraint firstItem="4UV-jA-qR0" firstAttribute="width" secondItem="cWv-WQ-ZBR" secondAttribute="width" id="qNT-tb-SeE"/>
                             <constraint firstItem="Yqd-1R-iTX" firstAttribute="trailing" secondItem="jI6-VF-rAN" secondAttribute="trailing" id="qwf-gf-IgR"/>
-                            <constraint firstItem="4T8-4t-OWv" firstAttribute="centerY" secondItem="wy1-CX-LkK" secondAttribute="centerY" id="r92-As-gJU"/>
                             <constraint firstItem="GRg-GZ-nz6" firstAttribute="trailing" secondItem="jI6-VF-rAN" secondAttribute="trailing" id="s5b-Dq-GCf"/>
                             <constraint firstItem="jI6-VF-rAN" firstAttribute="centerY" secondItem="cWv-WQ-ZBR" secondAttribute="centerY" id="tw5-63-Zsy"/>
                             <constraint firstItem="Yqd-1R-iTX" firstAttribute="height" secondItem="jI6-VF-rAN" secondAttribute="height" id="wOF-ac-33e"/>
@@ -232,6 +249,7 @@
                         <outlet property="bannerView" destination="J5e-uN-i5U" id="Qu7-LE-VuL"/>
                         <outlet property="calcButton" destination="QbC-BY-iaD" id="eyt-IJ-EzZ"/>
                         <outlet property="commitionTxt" destination="Yqd-1R-iTX" id="MG5-Nv-u83"/>
+                        <outlet property="couponSegment" destination="Mnp-8g-gWD" id="AHW-lg-jM0"/>
                         <outlet property="discountCommitionTxt" destination="MSS-SO-lBf" id="Kkx-4M-dTk"/>
                         <outlet property="discountRateSegment" destination="uHv-kK-bkn" id="650-gD-xfl"/>
                         <outlet property="discountRateTxt" destination="YO1-Hp-Rdu" id="ggk-84-yjm"/>
