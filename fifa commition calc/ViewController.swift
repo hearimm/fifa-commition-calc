@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @IBOutlet var segmetCollection: [UISegmentedControl]!
     var interstitial: GADInterstitial!
     var doCalcCnt:Int = 0;
-    let DEV_STATE = "LIVE"
+    let DEV_STATE = "DEV"
 
     override func viewDidLoad() {
         super.viewDidLoad()
