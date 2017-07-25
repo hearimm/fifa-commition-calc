@@ -3,63 +3,84 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B6053DB4F426B47C4A91E97990824D3 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 637F6BFBBF611CDD34CEB2843C13AE7B /* GoogleToolboxForMac-dummy.m */; };
-		3D5A8358B3CE03D143C39C4BF52B34D3 /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = 177F6E93310939821CBE58DB304BBC4D /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0AED6A8FBEF7F5C59C7082B8E7716BE2 /* pb_decode.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA6FD2C267817BBAAB43215B17C5CD /* pb_decode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B6053DB4F426B47C4A91E97990824D3 /* GoogleToolboxForMac-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DEF1B4CEB4732FF97896CD693F2EE6B /* GoogleToolboxForMac-dummy.m */; };
+		1E46EC8AB8830A23FAC91E8547748BF5 /* pb_common.h in Headers */ = {isa = PBXBuildFile; fileRef = C06718B92649A11A4DD2E1700F19544D /* pb_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28B7761E1D77D96D267539A7B67188EA /* nanopb-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C3B0122BF880AC8B12763402A60193 /* nanopb-dummy.m */; };
+		3AFB8BB811B8E80909FAB57769F472CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		3D5A8358B3CE03D143C39C4BF52B34D3 /* GTMNSData+zlib.m in Sources */ = {isa = PBXBuildFile; fileRef = F7174B51F81D13EE5F0B92027ADB7214 /* GTMNSData+zlib.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		5130B1B7B235899CCAD7CEF3CB9CF65F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		6B02824B166AF4649072CAB930283EEA /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A9DF1A23ACED9EF5B12EDDB25C169FD /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7F11AD1DD50E3704499AEA8EDA170D7D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		89BDF87944D20309195D933DD85BA7C0 /* Pods-fifa commission calc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A4E10EBDAC2E07FE5287E96B83906D38 /* Pods-fifa commission calc-dummy.m */; };
-		CBC7548501161D689ACF033CA42AA1AB /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DC230575D106C26D030EC28150357B2 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B02824B166AF4649072CAB930283EEA /* GTMDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D0EDAB0C21E6CF5E5E5E8F478ACC3D1 /* GTMDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91C9C419C2E304B3A68293C22053034E /* pb_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 496E87FE3270EB807861A6E5BF273431 /* pb_encode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
+		9AE8B5D2991951C303DACB3F3210B172 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		9CBD14C17446EC9384CFAADBADF12387 /* pb_common.c in Sources */ = {isa = PBXBuildFile; fileRef = FFFAC84F2A9278F732CB870FD3BE7A96 /* pb_common.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc -fno-objc-arc"; }; };
+		A39A7F90321353E49D6165BAD53505B2 /* pb.h in Headers */ = {isa = PBXBuildFile; fileRef = B67A2DAEE333C76E961248BC004835EE /* pb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B48B4A753CFB055ACCDA69BC8D0AF253 /* Pods-fifaOnline3-commission-calc-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E8BDC4DCBBFE01C7EF52C12FA7462900 /* Pods-fifaOnline3-commission-calc-dummy.m */; };
+		CBC7548501161D689ACF033CA42AA1AB /* GTMNSData+zlib.h in Headers */ = {isa = PBXBuildFile; fileRef = 528A9F88FCB49798C0DB1E8994C82518 /* GTMNSData+zlib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D02A9BE496DF996BBC92776E586BCAF8 /* pb_encode.h in Headers */ = {isa = PBXBuildFile; fileRef = 55AF0503EFB83ECC45CF3FFE2C8EB179 /* pb_encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F2A7C7D18755231B289C10D16DD6F730 /* pb_decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 94A67F8259EBE13E58B262EF3999E166 /* pb_decode.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc -fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C824C3A44279DC186299417D73347C41 /* PBXContainerItemProxy */ = {
+		95C43A9C820B34A8F1BD4EC0F078D6FD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E1BBB76ADBF2EF4EF2CE5DF6BBC77296;
 			remoteInfo = GoogleToolboxForMac;
 		};
+		AE4B118142EDB8AECA108E6DACD617A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF4B35B9FC819386EB09219BC91827D7;
+			remoteInfo = nanopb;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08D660378B145DDF2D2C2123E60788FB /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		177F6E93310939821CBE58DB304BBC4D /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
-		44DC731ABA00002727C97EDF975A802E /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
-		591E467FC228F2B6CB65789181FA873F /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
-		637E3499D043AE9145BAAB192FDADBC9 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
-		637F6BFBBF611CDD34CEB2843C13AE7B /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
-		67BA331205FC0E3D5672BB206324CB75 /* libGoogleToolboxForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGoogleToolboxForMac.a; path = libGoogleToolboxForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A9DF1A23ACED9EF5B12EDDB25C169FD /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
-		8DC230575D106C26D030EC28150357B2 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		00C3B0122BF880AC8B12763402A60193 /* nanopb-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "nanopb-dummy.m"; sourceTree = "<group>"; };
+		02A028161B7A57962FAE66CBE53F25C6 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		1035CDE8C935F2B665289272E43B10FB /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseNanoPB.framework; path = Frameworks/FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		15ADDE8A3092C9578047B734E5C9557A /* Pods-fifaOnline3-commission-calc-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fifaOnline3-commission-calc-acknowledgements.plist"; sourceTree = "<group>"; };
+		30EBA011ED42D857A1BD17520BA6F544 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = Frameworks/frameworks/GoogleMobileAds.framework; sourceTree = "<group>"; };
+		3478D5091BA8B678B1A9E770BBFE0E07 /* libPods-fifaOnline3-commission-calc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-fifaOnline3-commission-calc.a"; path = "libPods-fifaOnline3-commission-calc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A2542DD4533614A322C8D639A590F85 /* Pods-fifaOnline3-commission-calc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fifaOnline3-commission-calc.release.xcconfig"; sourceTree = "<group>"; };
+		3B80875DF292A9AA3C0E3942FB8F5888 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCore.framework; path = Frameworks/FirebaseCore.framework; sourceTree = "<group>"; };
+		4132BE7CF5C2C64A1D90E54D7052B62A /* Pods-fifaOnline3-commission-calc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fifaOnline3-commission-calc.debug.xcconfig"; sourceTree = "<group>"; };
+		494680E769B47B73AF770F21335C9F91 /* Pods-fifaOnline3-commission-calc-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fifaOnline3-commission-calc-acknowledgements.markdown"; sourceTree = "<group>"; };
+		496E87FE3270EB807861A6E5BF273431 /* pb_encode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_encode.c; sourceTree = "<group>"; };
+		4B763104F3576BB8E8970AAF2E617D97 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
+		528A9F88FCB49798C0DB1E8994C82518 /* GTMNSData+zlib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "GTMNSData+zlib.h"; path = "Foundation/GTMNSData+zlib.h"; sourceTree = "<group>"; };
+		533323F4F84F7942766563D6D88A1800 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseCoreDiagnostics.framework; path = Frameworks/FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		55AF0503EFB83ECC45CF3FFE2C8EB179 /* pb_encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_encode.h; sourceTree = "<group>"; };
+		5D0EDAB0C21E6CF5E5E5E8F478ACC3D1 /* GTMDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		63E48E28640DFEB040E7D6B53FF6F9C5 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		6C61562489487511F5378AF83674465E /* nanopb-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "nanopb-prefix.pch"; sourceTree = "<group>"; };
+		6DEF1B4CEB4732FF97896CD693F2EE6B /* GoogleToolboxForMac-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GoogleToolboxForMac-dummy.m"; sourceTree = "<group>"; };
+		734AF636207B91EF8BAE6EC0420E1BC3 /* Pods-fifaOnline3-commission-calc-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fifaOnline3-commission-calc-frameworks.sh"; sourceTree = "<group>"; };
+		7D9E1E910A764506E0FBB4BAA1A5F5F6 /* nanopb.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = nanopb.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0F74C7C897731C7F5B66B35144C71A4 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		A4E10EBDAC2E07FE5287E96B83906D38 /* Pods-fifa commission calc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fifa commission calc-dummy.m"; sourceTree = "<group>"; };
-		AC9D1D79348F7A42518C1A4ECB8AF338 /* Pods-fifa commission calc-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fifa commission calc-resources.sh"; sourceTree = "<group>"; };
-		BC8F85BBA3B505403D820C5CCBE20B7E /* Pods-fifa commission calc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fifa commission calc.release.xcconfig"; sourceTree = "<group>"; };
-		BE91EFF0CCEE49294FF1ADB2B0AFC3DD /* Pods-fifa commission calc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fifa commission calc.debug.xcconfig"; sourceTree = "<group>"; };
+		9437C7AB9F35BE9F8FAF26C86643DD7A /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
+		94A67F8259EBE13E58B262EF3999E166 /* pb_decode.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_decode.c; sourceTree = "<group>"; };
+		B67A2DAEE333C76E961248BC004835EE /* pb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb.h; sourceTree = "<group>"; };
+		B7EA6FD2C267817BBAAB43215B17C5CD /* pb_decode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_decode.h; sourceTree = "<group>"; };
+		C06718B92649A11A4DD2E1700F19544D /* pb_common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = pb_common.h; sourceTree = "<group>"; };
+		C714FAD7B0E38AA75FFA2FA747A49F3F /* libnanopb.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libnanopb.a; path = libnanopb.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9BFC3A9ADA998895CC4E44DFDD0BB69 /* Pods-fifaOnline3-commission-calc-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fifaOnline3-commission-calc-resources.sh"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CBE7B493F8B4AA2F500FCF4A75F6A32C /* Pods-fifa commission calc-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fifa commission calc-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D360AA8F059A145DDF2D85799385F2CF /* libPods-fifa commission calc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-fifa commission calc.a"; path = "libPods-fifa commission calc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA65249CD274DB9665BCF6B4206DF62C /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Core/Sources/Firebase.h; sourceTree = "<group>"; };
-		E3A65EEAB5A5A70DD3326016F7536DF2 /* GoogleToolboxForMac-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GoogleToolboxForMac-prefix.pch"; sourceTree = "<group>"; };
-		F649CDAA11D9F92BDBE989BCEA444C3E /* Pods-fifa commission calc-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fifa commission calc-frameworks.sh"; sourceTree = "<group>"; };
-		F6BA1FF98B15A5FA7F4B65C90BB907B4 /* Pods-fifa commission calc-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fifa commission calc-acknowledgements.plist"; sourceTree = "<group>"; };
+		D16AE55BE4950C59376FE485E0E8DCA1 /* GoogleToolboxForMac.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GoogleToolboxForMac.xcconfig; sourceTree = "<group>"; };
+		E8BDC4DCBBFE01C7EF52C12FA7462900 /* Pods-fifaOnline3-commission-calc-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fifaOnline3-commission-calc-dummy.m"; sourceTree = "<group>"; };
+		F46D5B9DEBC8DBE6C5F4E59F2658E952 /* libGoogleToolboxForMac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGoogleToolboxForMac.a; path = libGoogleToolboxForMac.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7174B51F81D13EE5F0B92027ADB7214 /* GTMNSData+zlib.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "GTMNSData+zlib.m"; path = "Foundation/GTMNSData+zlib.m"; sourceTree = "<group>"; };
+		FFFAC84F2A9278F732CB870FD3BE7A96 /* pb_common.c */ = {isa = PBXFileReference; includeInIndex = 1; path = pb_common.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0EE58127E6ED00B848F6D888A1273C46 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7F11AD1DD50E3704499AEA8EDA170D7D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		736872D0F6BFBDB3F36ED73405DE4E29 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -68,112 +89,124 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		87268ACE84A89A1B442DEC32A638ABB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE8B5D2991951C303DACB3F3210B172 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94EB8A8937D61E8CED1F3C819230AE4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AFB8BB811B8E80909FAB57769F472CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D3D52240AE5894F1D8236CA984866A5 /* Core */ = {
+		15459AF763958C3B10DCEE2E6B618348 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA65249CD274DB9665BCF6B4206DF62C /* Firebase.h */,
-			);
-			name = Core;
-			sourceTree = "<group>";
-		};
-		118B94582406FAB3277D68AD18A05F28 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				637E3499D043AE9145BAAB192FDADBC9 /* GoogleToolboxForMac.xcconfig */,
-				637F6BFBBF611CDD34CEB2843C13AE7B /* GoogleToolboxForMac-dummy.m */,
-				E3A65EEAB5A5A70DD3326016F7536DF2 /* GoogleToolboxForMac-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/GoogleToolboxForMac";
-			sourceTree = "<group>";
-		};
-		183697714D15B99AFC74B3589D941F4C /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				0D3D52240AE5894F1D8236CA984866A5 /* Core */,
-			);
-			name = Firebase;
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		2D080D5478F61C872A91982AFFB072CB /* Pods-fifa commission calc */ = {
-			isa = PBXGroup;
-			children = (
-				CBE7B493F8B4AA2F500FCF4A75F6A32C /* Pods-fifa commission calc-acknowledgements.markdown */,
-				F6BA1FF98B15A5FA7F4B65C90BB907B4 /* Pods-fifa commission calc-acknowledgements.plist */,
-				A4E10EBDAC2E07FE5287E96B83906D38 /* Pods-fifa commission calc-dummy.m */,
-				F649CDAA11D9F92BDBE989BCEA444C3E /* Pods-fifa commission calc-frameworks.sh */,
-				AC9D1D79348F7A42518C1A4ECB8AF338 /* Pods-fifa commission calc-resources.sh */,
-				BE91EFF0CCEE49294FF1ADB2B0AFC3DD /* Pods-fifa commission calc.debug.xcconfig */,
-				BC8F85BBA3B505403D820C5CCBE20B7E /* Pods-fifa commission calc.release.xcconfig */,
-			);
-			name = "Pods-fifa commission calc";
-			path = "Target Support Files/Pods-fifa commission calc";
-			sourceTree = "<group>";
-		};
-		314A133E913D10C2CB4E4ED56FEF7065 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2D080D5478F61C872A91982AFFB072CB /* Pods-fifa commission calc */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		3CEDBDCBFDA11BB33234F061CC3AE662 /* GoogleToolboxForMac */ = {
-			isa = PBXGroup;
-			children = (
-				B4CF52347626BAEE87054F6B4DB158F5 /* Defines */,
-				684B2CAB2E9A6EA447B7A3961FCDEF1C /* NSData+zlib */,
-				118B94582406FAB3277D68AD18A05F28 /* Support Files */,
-			);
-			name = GoogleToolboxForMac;
-			path = GoogleToolboxForMac;
-			sourceTree = "<group>";
-		};
-		3EA72213A53C34CF78A1AEA1844DCCF9 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				08D660378B145DDF2D2C2123E60788FB /* FirebaseInstanceID.framework */,
+				02A028161B7A57962FAE66CBE53F25C6 /* FirebaseAnalytics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3EEF69CB8CAACA79B6B2258174E0E1AB /* Frameworks */ = {
+		19F7CEA18900A1174FBF966271462696 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A0F74C7C897731C7F5B66B35144C71A4 /* FirebaseAnalytics.framework */,
+				30EBA011ED42D857A1BD17520BA6F544 /* GoogleMobileAds.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		46C51FA36716999E33210D249215040C /* Google-Mobile-Ads-SDK */ = {
+		1CF172AF87C3B087307463126975FEF2 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				DD483EDC222058D162F7E67F52D59376 /* Frameworks */,
+				A4F8ED3D08EEBC657565732E9568194D /* Frameworks */,
+			);
+			name = FirebaseInstanceID;
+			path = FirebaseInstanceID;
+			sourceTree = "<group>";
+		};
+		1D46C3F1AE6AEB4CDB37C9EB13BE8D0B /* Pods-fifaOnline3-commission-calc */ = {
+			isa = PBXGroup;
+			children = (
+				494680E769B47B73AF770F21335C9F91 /* Pods-fifaOnline3-commission-calc-acknowledgements.markdown */,
+				15ADDE8A3092C9578047B734E5C9557A /* Pods-fifaOnline3-commission-calc-acknowledgements.plist */,
+				E8BDC4DCBBFE01C7EF52C12FA7462900 /* Pods-fifaOnline3-commission-calc-dummy.m */,
+				734AF636207B91EF8BAE6EC0420E1BC3 /* Pods-fifaOnline3-commission-calc-frameworks.sh */,
+				C9BFC3A9ADA998895CC4E44DFDD0BB69 /* Pods-fifaOnline3-commission-calc-resources.sh */,
+				4132BE7CF5C2C64A1D90E54D7052B62A /* Pods-fifaOnline3-commission-calc.debug.xcconfig */,
+				3A2542DD4533614A322C8D639A590F85 /* Pods-fifaOnline3-commission-calc.release.xcconfig */,
+			);
+			name = "Pods-fifaOnline3-commission-calc";
+			path = "Target Support Files/Pods-fifaOnline3-commission-calc";
+			sourceTree = "<group>";
+		};
+		37BCD666052597EF80C5685A81D5D66C /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				19F7CEA18900A1174FBF966271462696 /* Frameworks */,
 			);
 			name = "Google-Mobile-Ads-SDK";
 			path = "Google-Mobile-Ads-SDK";
 			sourceTree = "<group>";
 		};
-		5FC0F1DFD1236D5C0F63E0685AF93A88 /* FirebaseCore */ = {
+		3F235D4AFD824D54A1566043B0E99F6D /* decode */ = {
 			isa = PBXGroup;
 			children = (
-				CCC480D836047CC859AB552FFFC44185 /* Frameworks */,
 			);
-			name = FirebaseCore;
-			path = FirebaseCore;
+			name = decode;
 			sourceTree = "<group>";
 		};
-		684B2CAB2E9A6EA447B7A3961FCDEF1C /* NSData+zlib */ = {
+		49546B3C0430F24EB46EA6EBF5AC2C0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8DC230575D106C26D030EC28150357B2 /* GTMNSData+zlib.h */,
-				177F6E93310939821CBE58DB304BBC4D /* GTMNSData+zlib.m */,
+				3B80875DF292A9AA3C0E3942FB8F5888 /* FirebaseCore.framework */,
+				533323F4F84F7942766563D6D88A1800 /* FirebaseCoreDiagnostics.framework */,
+				1035CDE8C935F2B665289272E43B10FB /* FirebaseNanoPB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54EF411BB0F383575C41726BF5952780 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4B763104F3576BB8E8970AAF2E617D97 /* Firebase.h */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		5C6A60D56DCBFBE31964A3D3FF956C46 /* NSData+zlib */ = {
+			isa = PBXGroup;
+			children = (
+				528A9F88FCB49798C0DB1E8994C82518 /* GTMNSData+zlib.h */,
+				F7174B51F81D13EE5F0B92027ADB7214 /* GTMNSData+zlib.m */,
 			);
 			name = "NSData+zlib";
+			sourceTree = "<group>";
+		};
+		6CC300433C01BB6E3980B3D932CD9DF1 /* nanopb */ = {
+			isa = PBXGroup;
+			children = (
+				B67A2DAEE333C76E961248BC004835EE /* pb.h */,
+				FFFAC84F2A9278F732CB870FD3BE7A96 /* pb_common.c */,
+				C06718B92649A11A4DD2E1700F19544D /* pb_common.h */,
+				94A67F8259EBE13E58B262EF3999E166 /* pb_decode.c */,
+				B7EA6FD2C267817BBAAB43215B17C5CD /* pb_decode.h */,
+				496E87FE3270EB807861A6E5BF273431 /* pb_encode.c */,
+				55AF0503EFB83ECC45CF3FFE2C8EB179 /* pb_encode.h */,
+				3F235D4AFD824D54A1566043B0E99F6D /* decode */,
+				ADE1BEB2AA72C42616C6155EC0237D84 /* encode */,
+				8574475EBD4445E50D910A5B5441B959 /* Support Files */,
+			);
+			name = nanopb;
+			path = nanopb;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -189,58 +222,84 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A7687F95F83530A6DB138C50240162F0 /* Pods */,
-				9660813C5C199CC0208AA9DA7E53D68B /* Products */,
-				314A133E913D10C2CB4E4ED56FEF7065 /* Targets Support Files */,
+				F8BFBAD4B621A4FD10F39A0106589698 /* Pods */,
+				DC78142B4A3C3C0708B1AD5A49488D44 /* Products */,
+				98ABA9FA725AC9B920C8160BCEAD7A02 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		851D26DDCCD4933B725E9FED5DF771CA /* FirebaseAnalytics */ = {
+		8574475EBD4445E50D910A5B5441B959 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3EEF69CB8CAACA79B6B2258174E0E1AB /* Frameworks */,
+				7D9E1E910A764506E0FBB4BAA1A5F5F6 /* nanopb.xcconfig */,
+				00C3B0122BF880AC8B12763402A60193 /* nanopb-dummy.m */,
+				6C61562489487511F5378AF83674465E /* nanopb-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/nanopb";
+			sourceTree = "<group>";
+		};
+		98ABA9FA725AC9B920C8160BCEAD7A02 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D46C3F1AE6AEB4CDB37C9EB13BE8D0B /* Pods-fifaOnline3-commission-calc */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A1E2D4BD4513A786E4A36E1E88D81F41 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				15459AF763958C3B10DCEE2E6B618348 /* Frameworks */,
 			);
 			name = FirebaseAnalytics;
 			path = FirebaseAnalytics;
 			sourceTree = "<group>";
 		};
-		9660813C5C199CC0208AA9DA7E53D68B /* Products */ = {
+		A4F8ED3D08EEBC657565732E9568194D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				67BA331205FC0E3D5672BB206324CB75 /* libGoogleToolboxForMac.a */,
-				D360AA8F059A145DDF2D85799385F2CF /* libPods-fifa commission calc.a */,
+				63E48E28640DFEB040E7D6B53FF6F9C5 /* FirebaseInstanceID.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A7687F95F83530A6DB138C50240162F0 /* Pods */ = {
+		A86553EF365F4C1ADA6257F71C0ECF57 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				183697714D15B99AFC74B3589D941F4C /* Firebase */,
-				851D26DDCCD4933B725E9FED5DF771CA /* FirebaseAnalytics */,
-				5FC0F1DFD1236D5C0F63E0685AF93A88 /* FirebaseCore */,
-				B0F2950803F54A71C0193D36AD1F6328 /* FirebaseInstanceID */,
-				46C51FA36716999E33210D249215040C /* Google-Mobile-Ads-SDK */,
-				3CEDBDCBFDA11BB33234F061CC3AE662 /* GoogleToolboxForMac */,
+				D16AE55BE4950C59376FE485E0E8DCA1 /* GoogleToolboxForMac.xcconfig */,
+				6DEF1B4CEB4732FF97896CD693F2EE6B /* GoogleToolboxForMac-dummy.m */,
+				9437C7AB9F35BE9F8FAF26C86643DD7A /* GoogleToolboxForMac-prefix.pch */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/GoogleToolboxForMac";
 			sourceTree = "<group>";
 		};
-		B0F2950803F54A71C0193D36AD1F6328 /* FirebaseInstanceID */ = {
+		ADE1BEB2AA72C42616C6155EC0237D84 /* encode */ = {
 			isa = PBXGroup;
 			children = (
-				3EA72213A53C34CF78A1AEA1844DCCF9 /* Frameworks */,
 			);
-			name = FirebaseInstanceID;
-			path = FirebaseInstanceID;
+			name = encode;
 			sourceTree = "<group>";
 		};
-		B4CF52347626BAEE87054F6B4DB158F5 /* Defines */ = {
+		AE5BA8B17F56629FA35D0CD2F0A86237 /* Firebase */ = {
 			isa = PBXGroup;
 			children = (
-				6A9DF1A23ACED9EF5B12EDDB25C169FD /* GTMDefines.h */,
+				54EF411BB0F383575C41726BF5952780 /* Core */,
 			);
-			name = Defines;
+			name = Firebase;
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		AFC74F670909AFDB1B634EF20D7DB2F0 /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				D9E16200761E54B65F423A40334B6626 /* Defines */,
+				5C6A60D56DCBFBE31964A3D3FF956C46 /* NSData+zlib */,
+				A86553EF365F4C1ADA6257F71C0ECF57 /* Support Files */,
+			);
+			name = GoogleToolboxForMac;
+			path = GoogleToolboxForMac;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -251,20 +310,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CCC480D836047CC859AB552FFFC44185 /* Frameworks */ = {
+		CAD1CC701FF572DC793FC854ED47AE77 /* FirebaseCore */ = {
 			isa = PBXGroup;
 			children = (
-				44DC731ABA00002727C97EDF975A802E /* FirebaseCore.framework */,
+				49546B3C0430F24EB46EA6EBF5AC2C0D /* Frameworks */,
 			);
-			name = Frameworks;
+			name = FirebaseCore;
+			path = FirebaseCore;
 			sourceTree = "<group>";
 		};
-		DD483EDC222058D162F7E67F52D59376 /* Frameworks */ = {
+		D9E16200761E54B65F423A40334B6626 /* Defines */ = {
 			isa = PBXGroup;
 			children = (
-				591E467FC228F2B6CB65789181FA873F /* GoogleMobileAds.framework */,
+				5D0EDAB0C21E6CF5E5E5E8F478ACC3D1 /* GTMDefines.h */,
 			);
-			name = Frameworks;
+			name = Defines;
+			sourceTree = "<group>";
+		};
+		DC78142B4A3C3C0708B1AD5A49488D44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F46D5B9DEBC8DBE6C5F4E59F2658E952 /* libGoogleToolboxForMac.a */,
+				C714FAD7B0E38AA75FFA2FA747A49F3F /* libnanopb.a */,
+				3478D5091BA8B678B1A9E770BBFE0E07 /* libPods-fifaOnline3-commission-calc.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8BFBAD4B621A4FD10F39A0106589698 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE5BA8B17F56629FA35D0CD2F0A86237 /* Firebase */,
+				A1E2D4BD4513A786E4A36E1E88D81F41 /* FirebaseAnalytics */,
+				CAD1CC701FF572DC793FC854ED47AE77 /* FirebaseCore */,
+				1CF172AF87C3B087307463126975FEF2 /* FirebaseInstanceID */,
+				37BCD666052597EF80C5685A81D5D66C /* Google-Mobile-Ads-SDK */,
+				AFC74F670909AFDB1B634EF20D7DB2F0 /* GoogleToolboxForMac */,
+				6CC300433C01BB6E3980B3D932CD9DF1 /* nanopb */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,24 +363,53 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		49EE04F5125849E644783C89F23AA9F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A39A7F90321353E49D6165BAD53505B2 /* pb.h in Headers */,
+				1E46EC8AB8830A23FAC91E8547748BF5 /* pb_common.h in Headers */,
+				0AED6A8FBEF7F5C59C7082B8E7716BE2 /* pb_decode.h in Headers */,
+				D02A9BE496DF996BBC92776E586BCAF8 /* pb_encode.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		7F17557DD2C8CC503D2ACB4707470044 /* Pods-fifa commission calc */ = {
+		79102609C309516221A1CA4324A4238C /* Pods-fifaOnline3-commission-calc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 01CFF81366FD04A1B194804F33708647 /* Build configuration list for PBXNativeTarget "Pods-fifa commission calc" */;
+			buildConfigurationList = 8AE7121A5F1F7E29806E8226C36DA8BA /* Build configuration list for PBXNativeTarget "Pods-fifaOnline3-commission-calc" */;
 			buildPhases = (
-				933A568C3FB7F2A585CC51EDF5BCCA61 /* Sources */,
-				0EE58127E6ED00B848F6D888A1273C46 /* Frameworks */,
+				9065A6AC2FDB4BADD92C2A36ED943E63 /* Sources */,
+				87268ACE84A89A1B442DEC32A638ABB2 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				D2C5680C1F509E0BFDE8170907C03B9E /* PBXTargetDependency */,
+				BCCB90257C4D618934899FD376FD2DCC /* PBXTargetDependency */,
+				24A8AEF621248BEC794E35533D54FD86 /* PBXTargetDependency */,
 			);
-			name = "Pods-fifa commission calc";
-			productName = "Pods-fifa commission calc";
-			productReference = D360AA8F059A145DDF2D85799385F2CF /* libPods-fifa commission calc.a */;
+			name = "Pods-fifaOnline3-commission-calc";
+			productName = "Pods-fifaOnline3-commission-calc";
+			productReference = 3478D5091BA8B678B1A9E770BBFE0E07 /* libPods-fifaOnline3-commission-calc.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF4B35B9FC819386EB09219BC91827D7 /* nanopb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B8307E997A097EB50C00A8C7967B858A /* Build configuration list for PBXNativeTarget "nanopb" */;
+			buildPhases = (
+				5303D5F0966B6798D7AAA88A9ACCB670 /* Sources */,
+				94EB8A8937D61E8CED1F3C819230AE4D /* Frameworks */,
+				49EE04F5125849E644783C89F23AA9F9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = nanopb;
+			productName = nanopb;
+			productReference = C714FAD7B0E38AA75FFA2FA747A49F3F /* libnanopb.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		E1BBB76ADBF2EF4EF2CE5DF6BBC77296 /* GoogleToolboxForMac */ = {
@@ -313,7 +426,7 @@
 			);
 			name = GoogleToolboxForMac;
 			productName = GoogleToolboxForMac;
-			productReference = 67BA331205FC0E3D5672BB206324CB75 /* libGoogleToolboxForMac.a */;
+			productReference = F46D5B9DEBC8DBE6C5F4E59F2658E952 /* libGoogleToolboxForMac.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -333,22 +446,34 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9660813C5C199CC0208AA9DA7E53D68B /* Products */;
+			productRefGroup = DC78142B4A3C3C0708B1AD5A49488D44 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E1BBB76ADBF2EF4EF2CE5DF6BBC77296 /* GoogleToolboxForMac */,
-				7F17557DD2C8CC503D2ACB4707470044 /* Pods-fifa commission calc */,
+				CF4B35B9FC819386EB09219BC91827D7 /* nanopb */,
+				79102609C309516221A1CA4324A4238C /* Pods-fifaOnline3-commission-calc */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		933A568C3FB7F2A585CC51EDF5BCCA61 /* Sources */ = {
+		5303D5F0966B6798D7AAA88A9ACCB670 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89BDF87944D20309195D933DD85BA7C0 /* Pods-fifa commission calc-dummy.m in Sources */,
+				28B7761E1D77D96D267539A7B67188EA /* nanopb-dummy.m in Sources */,
+				9CBD14C17446EC9384CFAADBADF12387 /* pb_common.c in Sources */,
+				F2A7C7D18755231B289C10D16DD6F730 /* pb_decode.c in Sources */,
+				91C9C419C2E304B3A68293C22053034E /* pb_encode.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9065A6AC2FDB4BADD92C2A36ED943E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B48B4A753CFB055ACCDA69BC8D0AF253 /* Pods-fifaOnline3-commission-calc-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,18 +489,24 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		D2C5680C1F509E0BFDE8170907C03B9E /* PBXTargetDependency */ = {
+		24A8AEF621248BEC794E35533D54FD86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = nanopb;
+			target = CF4B35B9FC819386EB09219BC91827D7 /* nanopb */;
+			targetProxy = AE4B118142EDB8AECA108E6DACD617A9 /* PBXContainerItemProxy */;
+		};
+		BCCB90257C4D618934899FD376FD2DCC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GoogleToolboxForMac;
 			target = E1BBB76ADBF2EF4EF2CE5DF6BBC77296 /* GoogleToolboxForMac */;
-			targetProxy = C824C3A44279DC186299417D73347C41 /* PBXContainerItemProxy */;
+			targetProxy = 95C43A9C820B34A8F1BD4EC0F078D6FD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2FF9E6E2DBD2B55E2B0B0CC1A5C09D5F /* Debug */ = {
+		4095ED5A6D81CA25CB60544B4264DEB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE91EFF0CCEE49294FF1ADB2B0AFC3DD /* Pods-fifa commission calc.debug.xcconfig */;
+			baseConfigurationReference = 4132BE7CF5C2C64A1D90E54D7052B62A /* Pods-fifaOnline3-commission-calc.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -383,7 +514,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -396,95 +527,7 @@
 			};
 			name = Debug;
 		};
-		79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		894F306B90FA064E2DD93D8024B46661 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 637E3499D043AE9145BAAB192FDADBC9 /* GoogleToolboxForMac.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Debug;
-		};
-		98391A651F42402B6E41B847CD9D7B4A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 637E3499D043AE9145BAAB192FDADBC9 /* GoogleToolboxForMac.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-			};
-			name = Release;
-		};
-		CF7953F66E785E8876EB4D370D777D50 /* Debug */ = {
+		59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -520,7 +563,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -528,9 +571,33 @@
 			};
 			name = Debug;
 		};
-		E93308E808016DA5DBCBFB637387737E /* Release */ = {
+		894F306B90FA064E2DD93D8024B46661 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BC8F85BBA3B505403D820C5CCBE20B7E /* Pods-fifa commission calc.release.xcconfig */;
+			baseConfigurationReference = D16AE55BE4950C59376FE485E0E8DCA1 /* GoogleToolboxForMac.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		98391A651F42402B6E41B847CD9D7B4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D16AE55BE4950C59376FE485E0E8DCA1 /* GoogleToolboxForMac.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -538,7 +605,71 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				GCC_PREFIX_HEADER = "Target Support Files/GoogleToolboxForMac/GoogleToolboxForMac-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B7324857C38B065FEB1EEE3105C2367A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B8F8D4991B62F133E5DE388C3EB28561 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A2542DD4533614A322C8D639A590F85 /* Pods-fifaOnline3-commission-calc.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -551,23 +682,80 @@
 			};
 			name = Release;
 		};
+		E914E388E5AE628323599A87D28DDF63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9E1E910A764506E0FBB4BAA1A5F5F6 /* nanopb.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F189854B870C6C09C84ACC25319C1E7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D9E1E910A764506E0FBB4BAA1A5F5F6 /* nanopb.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/nanopb/nanopb-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		01CFF81366FD04A1B194804F33708647 /* Build configuration list for PBXNativeTarget "Pods-fifa commission calc" */ = {
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2FF9E6E2DBD2B55E2B0B0CC1A5C09D5F /* Debug */,
-				E93308E808016DA5DBCBFB637387737E /* Release */,
+				59B042A655B7C20CBAB90E385BF4E4C7 /* Debug */,
+				B7324857C38B065FEB1EEE3105C2367A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		8AE7121A5F1F7E29806E8226C36DA8BA /* Build configuration list for PBXNativeTarget "Pods-fifaOnline3-commission-calc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CF7953F66E785E8876EB4D370D777D50 /* Debug */,
-				79B0C2E66EFA9917ED6EDDB8FC6A7684 /* Release */,
+				4095ED5A6D81CA25CB60544B4264DEB5 /* Debug */,
+				B8F8D4991B62F133E5DE388C3EB28561 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B8307E997A097EB50C00A8C7967B858A /* Build configuration list for PBXNativeTarget "nanopb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F189854B870C6C09C84ACC25319C1E7F /* Debug */,
+				E914E388E5AE628323599A87D28DDF63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
