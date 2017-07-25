@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7F17557DD2C8CC503D2ACB4707470044'
-               BlueprintName = 'Pods-fifa commission calc'
+               BlueprintIdentifier = 'CF4B35B9FC819386EB09219BC91827D7'
+               BlueprintName = 'nanopb'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-fifa commission calc.a'>
+               BuildableName = 'libnanopb.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
