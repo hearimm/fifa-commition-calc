@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		27CF29A5C9161D4058A02E74 /* libPods-fifa commission calc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAE52D423B297F032D44A80F /* libPods-fifa commission calc.a */; };
 		518E00221E848255006D563F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E00211E848255006D563F /* AppDelegate.swift */; };
 		518E00241E848255006D563F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 518E00231E848255006D563F /* ViewController.swift */; };
 		518E00271E848255006D563F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518E00251E848255006D563F /* Main.storyboard */; };
@@ -15,10 +14,12 @@
 		518E002C1E848255006D563F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 518E002B1E848255006D563F /* Assets.xcassets */; };
 		518E002F1E848255006D563F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 518E002D1E848255006D563F /* LaunchScreen.storyboard */; };
 		51F3609C1E87037E00409DA7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 51F3609B1E87037E00409DA7 /* GoogleService-Info.plist */; };
+		D6E32A4AC6F0C2DC4CFE3A9F /* libPods-fifaOnline3-commission-calc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4160BBE71A0AA18859A05196 /* libPods-fifaOnline3-commission-calc.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4E123DC740E2A882F3B54F36 /* Pods-fifa commission calc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fifa commission calc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fifa commission calc/Pods-fifa commission calc.debug.xcconfig"; sourceTree = "<group>"; };
+		2EC4DA4EA3F9436E8E2342AF /* Pods-fifaOnline3-commission-calc.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fifaOnline3-commission-calc.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fifaOnline3-commission-calc/Pods-fifaOnline3-commission-calc.debug.xcconfig"; sourceTree = "<group>"; };
+		4160BBE71A0AA18859A05196 /* libPods-fifaOnline3-commission-calc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fifaOnline3-commission-calc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E001E1E848255006D563F /* fifaOnline3-commission-calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fifaOnline3-commission-calc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E00211E848255006D563F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		518E00231E848255006D563F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,8 +29,7 @@
 		518E002E1E848255006D563F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		518E00301E848255006D563F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51F3609B1E87037E00409DA7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C5BB4A3E91A9FEEB5A7F0AB4 /* Pods-fifa commission calc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fifa commission calc.release.xcconfig"; path = "Pods/Target Support Files/Pods-fifa commission calc/Pods-fifa commission calc.release.xcconfig"; sourceTree = "<group>"; };
-		EAE52D423B297F032D44A80F /* libPods-fifa commission calc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fifa commission calc.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCC2B34785672646E9A29169 /* Pods-fifaOnline3-commission-calc.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fifaOnline3-commission-calc.release.xcconfig"; path = "Pods/Target Support Files/Pods-fifaOnline3-commission-calc/Pods-fifaOnline3-commission-calc.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,29 +37,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27CF29A5C9161D4058A02E74 /* libPods-fifa commission calc.a in Frameworks */,
+				D6E32A4AC6F0C2DC4CFE3A9F /* libPods-fifaOnline3-commission-calc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		021E42725AC69146292D9753 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4E123DC740E2A882F3B54F36 /* Pods-fifa commission calc.debug.xcconfig */,
-				C5BB4A3E91A9FEEB5A7F0AB4 /* Pods-fifa commission calc.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		518E00151E848255006D563F = {
 			isa = PBXGroup;
 			children = (
 				518E00201E848255006D563F /* fifa commition calc */,
 				518E001F1E848255006D563F /* Products */,
-				021E42725AC69146292D9753 /* Pods */,
-				64D6D2E7660F597BCC5D32DC /* Frameworks */,
+				7E76F25BF34116051CBFBF7A /* Pods */,
+				CA76CE45ED0CD33CEC80C8EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,10 +77,19 @@
 			path = "fifa commition calc";
 			sourceTree = "<group>";
 		};
-		64D6D2E7660F597BCC5D32DC /* Frameworks */ = {
+		7E76F25BF34116051CBFBF7A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EAE52D423B297F032D44A80F /* libPods-fifa commission calc.a */,
+				2EC4DA4EA3F9436E8E2342AF /* Pods-fifaOnline3-commission-calc.debug.xcconfig */,
+				DCC2B34785672646E9A29169 /* Pods-fifaOnline3-commission-calc.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CA76CE45ED0CD33CEC80C8EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4160BBE71A0AA18859A05196 /* libPods-fifaOnline3-commission-calc.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -101,12 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 518E00331E848255006D563F /* Build configuration list for PBXNativeTarget "fifaOnline3-commission-calc" */;
 			buildPhases = (
-				092E1FBC12BC8A47C2C85BFD /* [CP] Check Pods Manifest.lock */,
+				08A655573F7C57FC618644A5 /* [CP] Check Pods Manifest.lock */,
 				518E001A1E848255006D563F /* Sources */,
 				518E001B1E848255006D563F /* Frameworks */,
 				518E001C1E848255006D563F /* Resources */,
-				40CAAE795F37579B678BDFCF /* [CP] Embed Pods Frameworks */,
-				F15B24A91B2387601E4FC615 /* [CP] Copy Pods Resources */,
+				892A04B390F9F12081377FB0 /* [CP] Embed Pods Frameworks */,
+				3D9029A0687CFFE157D366A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,7 +167,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		092E1FBC12BC8A47C2C85BFD /* [CP] Check Pods Manifest.lock */ = {
+		08A655573F7C57FC618644A5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -182,22 +182,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		40CAAE795F37579B678BDFCF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fifa commission calc/Pods-fifa commission calc-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F15B24A91B2387601E4FC615 /* [CP] Copy Pods Resources */ = {
+		3D9029A0687CFFE157D366A1 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,7 +194,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fifa commission calc/Pods-fifa commission calc-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fifaOnline3-commission-calc/Pods-fifaOnline3-commission-calc-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		892A04B390F9F12081377FB0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fifaOnline3-commission-calc/Pods-fifaOnline3-commission-calc-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -342,7 +342,7 @@
 		};
 		518E00341E848255006D563F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4E123DC740E2A882F3B54F36 /* Pods-fifa commission calc.debug.xcconfig */;
+			baseConfigurationReference = 2EC4DA4EA3F9436E8E2342AF /* Pods-fifaOnline3-commission-calc.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 553JH6R57K;
@@ -357,7 +357,7 @@
 		};
 		518E00351E848255006D563F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5BB4A3E91A9FEEB5A7F0AB4 /* Pods-fifa commission calc.release.xcconfig */;
+			baseConfigurationReference = DCC2B34785672646E9A29169 /* Pods-fifaOnline3-commission-calc.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 553JH6R57K;
